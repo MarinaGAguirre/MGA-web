@@ -43,8 +43,8 @@ a {
 }
 
 a:hover {
-   color: var(--first-alpha-color);
- }
+  color: var(--first-alpha-color);
+}
 
  .websites {
   color: var(--grayLigth-color);
@@ -126,7 +126,7 @@ a:hover {
   transition: all 0.3s ease-out;
 }
 
-/* Aplicamos estilo a . nav-item con la pseudoclase :hover*/
+/* Aplicamos estilo a .nav-item con la pseudoclase :hover*/
 .nav-item:hover {
   background-color: var(--first-alpha-color);
 }
@@ -195,7 +195,6 @@ a:hover {
   min-height: 400px;
   color: var(--white-color);
 }
-
 
 .error-404-hero {
   background: url(../images/404.png);
@@ -277,6 +276,72 @@ a:hover {
   min-height: 400px;
   background-position: center;
 }
+
+/*  **********  CARD HOME Styles  **********  */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  width: 20em;
+  height: 85%;
+  background-color: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 0 2em rgb(0, 0, 0, .2);
+  padding: 1em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1.5px);
+}
+
+.cards-image {
+  width: 15em;
+  height: 15em;
+  border-radius: 100%;
+  border: 4px solid var(--first-color);
+  padding-top: 2px;
+  /*margin-bottom: 1em;*/
+}
+
+.cards-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.cards-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards-title {
+  font-size: 1.5em;
+  font-weight: 400;
+  position: relative;
+  top: .2em;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1.1er;
+  margin: 1em 0;
+}
+
 
 /* FORMULARIOS DE CONTACTO: get-in-touch-form */
 
